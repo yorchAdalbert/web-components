@@ -5,7 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table</title>
-    <style></style>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      thead,
+      tfoot {
+        background-color: #427fef;
+        border-collapse: collapse;
+        color: white;
+        text-transform: capitalize;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #eef7ff;
+      }
+    </style>
   </head>
   <body>
     <table>
@@ -40,7 +56,7 @@
       </tbody>
       <tfoot>
         <tr>
-          <td>total</td>
+          <td colspan="2">total</td>
           <td>$5000</td>
         </tr>
       </tfoot>
